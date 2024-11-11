@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    font-family: "Poppins";
+}
+
+body {
+    font-family: "Poppins";
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #1089B8;
+    --secondary-color: #00AFEF;
+  }
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    width: 350px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.brand{
+   width: 345px;
+   height: 251px; 
+}
+
+.brand-logo{
+    width: 267px;
+    height: 72.87;
+}
+
+label {
+    display: block;
+    margin: 20px 0 2px;
+    font-size: 18px;
+    text-align: left;
+}
+.form{
+   margin: 15px;
+   display: flex;
+   flex-direction: column;
+   justify-items: flex-start;
+   width: 100%;
+}
+
+
+  
+input[type="text"],
+input[type="password"] {
+    max-width: none;
+    padding: 15px;
+    border: 1px solid #202020;
+    margin-bottom: 4px;
+    font-size: 1em;
+    border-radius: 4px;
+}
+
+.login-btn {
+    margin-top: 27px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    text-decoration: none;
+
+}
+
+.login-btn:hover {
+    background-color: var(--secondary-color);
+    transition: .5s ease-in-out;
+}
+
+.register-btn{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 15px 145px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    max-width: 100%;
+}
+
+.register-btn:hover {
+    background-color: var(--secondary-color);
+    transition: .5s ease-in-out;
+}
+
+.register-link {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    width: 100%;    
+}
