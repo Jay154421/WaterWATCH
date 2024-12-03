@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/setting.css" />
+    <title>WaterWATCH</title>
+    <style>
+      #google-map {
+        height: 400px; /* or any other height you prefer */
+        width: 100%; /* or any other width you prefer */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="logo1">
+        <a href="DashBoard.html"
+          ><img src="Asset/logo1.png" alt="" srcset=""
+        /></a>
+      </div>
+      <div>
+        <p>Home</p>
+      </div>
+      <div>
+        <a href="">
+          <img src="Asset/setting.png" alt="WaterWATCH" srcset="" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+      <div class="avatar"><img src="Asset/Avatar.png" alt="" /></div>
+      <div style="margin-bottom: 6px">Username: jay154421</div>
+      <div style="margin-bottom: 24px">Email: jaybodiongan0@gmail.com</div>
+      <div class="box">
+        Emergency Assistance If you need to report a water leak or have
+        questions about services, you can contact Everflow at 0330 6600 137.
+      </div>
+      <div>
+        <a
+          class="changepassword-btn"
+          style="font-size: 18px"
+          href="ChangePassword.html"
+          >Change Password</a
+        >
+      </div>
+      <div>
+        <a class="logout-btn" style="font-size: 18px" href="Login.html"
+          >Log out</a
+        >
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="icon">
+        <a href="MapLeak.html">
+          <img src="Asset/leakmap.png" alt="WaterWATCH" srcset="" /></a
+        ><label>Leak</label>
+      </div>
+      <div class="icon">
+        <a href="DashBoard.html">
+          <img src="Asset/home.png" alt="WaterWATCH" srcset="" /></a
+        ><label>Home</label>
+      </div>
+      <div class="icon">
+        <a href="history.html">
+          <img src="Asset/history.png" alt="WaterWATCH" srcset="" /></a
+        ><label>History</label>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoTkWNeZzdjPLZIRLTDCqrMAhHeHvlduk&callback=initMap"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

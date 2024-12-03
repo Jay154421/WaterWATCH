@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/mapleak.css" />
+    <title>WaterWATCH</title>
+    <style>
+      #google-map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="logo1">
+        <a href="DashBoard.html"
+          ><img src="Asset/logo1.png" alt="" srcset=""
+        /></a>
+      </div>
+      <div>
+        <p>Leak Map</p>
+      </div>
+      <div>
+        <a href="Setting.html">
+          <img src="Asset/setting.png" alt="WaterWATCH" srcset="" />
+        </a>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+      <!-- API KEY = AIzaSyBoTkWNeZzdjPLZIRLTDCqrMAhHeHvlduk -->
+      <div id="google-map"></div>
+      <div class="leak-box">
+        <div class="leak-detected">
+          <img style="margin-right: 15px; width: 40px" src="Asset/leak detected.png" alt="" />Leak Detected
+        </div>
+        <div class="no-leak-detected">
+          <img style="margin-right: 15px; width: 40px;" src="Asset/No leak detected.png" alt="" />No Leak Detected
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="icon">
+        <a href="MapLeak.html">
+          <img src="Asset/leakmap.png" alt="WaterWATCH" srcset="" /></a
+        ><label>Leak</label>
+      </div>
+      <div class="icon">
+        <a href="DashBoard.html">
+          <img src="Asset/home.png" alt="WaterWATCH" srcset="" /></a
+        ><label>Home</label>
+      </div>
+      <div class="icon">
+        <a href="history.html">
+          <img src="Asset/history.png" alt="WaterWATCH" srcset="" /></a
+        ><label>History</label>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoTkWNeZzdjPLZIRLTDCqrMAhHeHvlduk&callback=initMap"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
