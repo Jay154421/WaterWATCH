@@ -61,3 +61,40 @@ body{
     align-items: center;
     color: var(--main-color);
 }
+
+
+/* Media Queries for Responsive Design */
+/* 
+@media screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .brand-logo {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icon {
+        margin-bottom: 10px;
+    }
+} */

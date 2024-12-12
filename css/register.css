@@ -19,7 +19,7 @@
     align-items: center;
     flex-direction: column;
     padding: 5px;
-
+    height: 100vh;
 }
 .logo{
     display: flex;
@@ -34,13 +34,18 @@ img{
    font-size: 18px;
 }
 
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 
 input[type="text"],
 input[type="password"]{
-    padding-left: 15px;
-    width: 350px;
-    height: 57px;
+    padding: 15px;
+    width: 92%;
+    display: flex;
     border-radius: 8px;
     font-size: 18px;
     border: solid 0.5px black;
@@ -54,7 +59,7 @@ button{
     margin-top: 28px;
     border: none;
     height: 56px;
-    width: 360px;
+    width: 100%;
     border-radius: 8px;
     font-size: 18px;
     background-color: var(--main-color);
@@ -80,3 +85,32 @@ a{
     justify-content: center;
     align-items: center;
 }
+/* Existing styles */
+
+@media screen and (max-width: 768px) {
+    /* Styles for screens smaller than 768px wide */
+ 
+
+    .container {
+      flex-direction: column;
+    }
+    
+    .logo img {
+      width: 330px;
+      height: 72.87;
+    }
+    
+    input[type="text"],
+    input[type="password"] {
+      display: flex;
+      padding: 10px 15px;
+      font-size: 14px;
+      width: 93.3%;
+    }
+    
+    button{
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+  

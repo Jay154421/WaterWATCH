@@ -41,14 +41,14 @@ body {
     margin-top: 10px;
 }
 
-.brand{
-   width: 345px;
-   height: 220px; 
+.brand {
+    width: 345px;
+    aspect-ratio: 345 / 220;
 }
 
-.brand-logo{
+.brand-logo {
     width: 267px;
-    height: 72.87;
+    aspect-ratio: 267 / 72.87;
 }
 
 label {
@@ -121,3 +121,51 @@ hr{
     display: flex;
     margin-bottom: 90px;
 }
+
+/* Existing styles remain unchanged */
+
+/* New media query for mobile devices */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .logo {
+        margin-top: 5px;
+    }
+
+    .brand {
+        width: 300px;
+        height: 200px;
+    }
+
+    .brand-logo {
+        width: 220px;
+        height: 68.87px;
+    }
+
+    label {
+        font-size: 14px;
+        margin: 15px 0 2px;
+    }
+
+    .form {
+        margin: 10px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        padding: 8px;
+        font-size: 14px;
+    }
+    .login-btn,
+    .register-btn {
+        padding: 8px 120px;
+        font-size: 16px;
+    }
+}
+

@@ -4,31 +4,64 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/register.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>Register</title>
   </head>
   <body>
-    <div class="container">
-      <div class="logo">
-        <img
-          src="Asset/Water-Leak-Detection-Repair.jpg"
-          alt="WaterWATCH"
-          srcset=""
-        />
+    <form id="register-form" class="container">
+      <div class="box">
+        <div class="logo">
+          <img
+            src="Asset/Water-Leak-Detection-Repair.jpg"
+            alt="WaterWATCH"
+            srcset=""
+          />
+        </div>
+        <div class="form">
+          <div class="text">Username</div>
+          <input class="input" type="text" placeholder="username" id="username" />
+
+          <div class="text">Email</div>
+          <input type="text" placeholder="email" id="email" />
+
+          <div class="text">Password</div>
+          <input type="password" placeholder="password" id="password" />
+
+          <div class="text">Confirm Password</div>
+          <input
+            type="password"
+            placeholder="confirm password"
+            id="confirmpassword"
+          />
+        </div>
+        <button>Submit</button>
       </div>
-      <div class="form">
-        <div class="text">Username</div>
-        <input type="text" placeholder="username" />
+    </form>
+    <script>
+      document
+        .getElementById("register-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
 
-        <div class="text">Email</div>
-        <input type="text" placeholder="email" />
+          var username = document.getElementById("username").value;
+          var email = document.getElementById("email").value;
+          var password = document.getElementById("password").value;
+          var confirmpassword =
+            document.getElementById("confirmpassword").value;
 
-        <div class="text">Password</div>
-        <input type="password" placeholder="password" />
+          const user = {
+            username: username,
+            email: email,
+            password: password,
+          };
 
-        <div class="text">Confirm Password</div>
-        <input type="password" placeholder="confirm password" />
-      </div>
-      <button>Submit</button>
-    </div>
+          localStorage.setItem(username, JSON.stringify(user));
+          alert("Register successful! Please Login. ");
+          window.location.href = "index.html";
+        });
+    </script>
   </body>
 </html>

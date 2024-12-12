@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/mapleak.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>WaterWATCH</title>
     <style>
       #google-map {
@@ -36,10 +40,14 @@
       <div id="google-map"></div>
       <div class="leak-box">
         <div class="leak-detected">
-          <img style="margin-right: 15px; width: 40px" src="Asset/leak detected.png" alt="" />Leak Detected
+          <img
+            class="leak"
+            src="Asset/leak detected.png"
+          />Leak Detected
         </div>
         <div class="no-leak-detected">
-          <img style="margin-right: 15px; width: 40px;" src="Asset/No leak detected.png" alt="" />No Leak Detected
+          <img class="no-leak" src="Asset/No leak detected.png" />No Leak
+          Detected
         </div>
       </div>
     </div>
