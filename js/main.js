@@ -3,22 +3,25 @@ function initMap() {
     //Location Marker
     const markers = [
         {
-        locationName: 'Crumbs & Dollies',
-        lat:  8.454579,
-        lng: 124.265113,
-        address: '1 Kingly Ct, <br> London,<br> W1B 5PW',
+        locationName: 'Sensor',
+        lat:  8.254660,
+        lng: 124.265305,
+        address: 'Location: Kitchen Pipe'
         },
         {
-            locationName: 'Leak Alert',
-            lat: 8.224558,
-            lng: 124.235687,
-            address: '96 Bermondsey'
+            locationName: 'Sensor',
+            lat: 8.254596,
+            lng: 124.265323,
+            address: 'Location: Bathroom Pipe'
         },
        
     ];
 
-    const fehMarker =  'Asset/No leak detected.png'
-    const centerMap = { lat: 8.254579, lng:  124.265113};
+    const fehMarker = {
+        url: 'Asset/No leak detected.png', // Path to the icon image
+        scaledSize: new google.maps.Size(15, 15) // Set the size of the icon
+    };
+    const centerMap = { lat: 8.254622, lng:  124.265295};
     const mapOptions = {
         center: centerMap,
         zoom: 20,

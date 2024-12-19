@@ -100,6 +100,10 @@ body{
    footer>image{
     width: 950px;
    }
+
+   label{
+    font-size: 14px;
+    }
    
 } 
 
